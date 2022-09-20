@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style>
+.btn {
+  background-color: DodgerBlue;
+  border: none;
+  color: white;
+  padding: 12px 30px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+/* Более темный фон при наведении мыши */
+.btn:hover {
+  background-color: RoyalBlue;
+}
+</style>
+     <meta charset="UTF-8">
+
+
+
+     <title>Converted Image to PDF</title>
+       <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+<body bgcolor="#dbefe9">
+
+
+
+<form action="/show" method="get">
+    <p>QR-код создан успешно</p>
+    <img src="{{ url_for('static', filename='images/image.png') }}" />
+</form>
+
+
+
+
+</body>
+</html>
